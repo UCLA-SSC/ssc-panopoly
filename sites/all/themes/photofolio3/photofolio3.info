@@ -1,0 +1,42 @@
+name = Photofolio
+description = Among the most powerful Drupal themes ever released. Rebuilt the next generation.
+version = 3.1.0
+core = 7.x
+
+stylesheets[all and (min-width: 980px)][] = css/960.css
+stylesheets[all and (min-width: 760px) and (max-width: 980px)][] = css/720.css
+stylesheets[all and (max-width: 760px)][] = css/mobile.css
+stylesheets[all][] = style.css
+
+regions[navigation] = Navigation
+regions[header] = Header
+regions[banner] = Banner
+regions[highlighted] = Highlighted
+regions[promoted] = Promoted area
+regions[content] = Content
+regions[sidebar_first] = First sidebar
+regions[footer_first] = Footer first
+regions[footer_second] = Footer second
+regions[footer_third] = Footer third
+regions[footer] = Footer bottom
+regions[footer_bottom] = Footer bottom right
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+
+settings[breadcrumb_display]= 1
+settings[scrolltop_display]= 1
+settings[feed_icons_display]= 0
+settings[color_scheme]= 'default'
+settings[page_bg]= 'default'
+settings[headings_font_family]= 'hff-2'
+settings[paragraph_font_family]= 'pff-1'
+settings[sitename_font_family]= 'sff-1'
+settings[slogan_font_family]= 'slff-1'
+settings[slideshow_effect]='random'
+settings[slideshow_time]='6'
+settings[responsive_menu_state]= 1
+settings[responsive_menu_switchwidth]='980'
+settings[responsive_menu_topoptiontext]= 'Select a page'
+settings[responsive_menu_optgroups]= 1
+settings[responsive_menu_nested]= 1

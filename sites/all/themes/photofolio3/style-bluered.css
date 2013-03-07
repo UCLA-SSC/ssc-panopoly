@@ -1,0 +1,114 @@
+body { border-color:#003777; }
+
+a, a.active, li a.active,
+.team-member-title, .team-member-description-title,
+#site-name a,
+.breadcrumb a, .submitted a, .field-type-taxonomy-term-reference .field-items .field-item a, ul.links li a, .more-link a,
+.view-tags-cloud .views-field-nid, .team-member-email a, .view-galleries .gallery-links a  { color:#b60b1e; }
+
+.poll .bar .foreground { background-color:#b60b1e; }
+
+a:hover,
+#site-name a:hover,
+.breadcrumb a:hover, .submitted a:hover, .field-type-taxonomy-term-reference .field-items .field-item a:hover, ul.links li a:hover, .more-link a:hover,
+.team-member-email a:hover, .view-galleries .gallery-links a:hover { color:#e44667; }
+
+.view-tags-cloud a, #footer-bottom a { color:#003777; }
+
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+.view-tags-cloud a:hover, #footer-bottom a:hover { color:#425691; }
+
+/**
+* Logo - Site name/slogan.
+*/
+#site-slogan { color:#262626; }
+
+/*
+* Twitter updates.
+*/
+#footer .twtr-widget .twtr-tweet a { color:#b60b1e!important; }
+
+.twtr-widget { border-color: #d197a2!important; }
+
+.block-mtt-twitter h2 { background: url('images/bluered/twitter-title-bg.png') no-repeat right; }
+
+/**
+* Social media.
+*/
+ul.social-bookmarks li a { opacity:0.7; filter:alpha(opacity=70); /* For IE8 and earlier */ }
+
+ul.social-bookmarks li a:hover { opacity:1; filter:alpha(opacity=100); /* For IE8 and earlier */ }
+
+ul.social-bookmarks li.facebook a { background:url('images/bluered/social-media-facebook.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.linkedin a { background:url('images/bluered/social-media-linkedin.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.twitter a { background:url('images/bluered/social-media-twitter.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.flickr a { background:url('images/bluered/social-media-flickr.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.youtube a { background:url('images/bluered/social-media-youtube.png') no-repeat center bottom; }
+
+/**
+* Main menu.
+*/
+#main-navigation ul.menu li a { color:#b60b1e; }
+
+#main-navigation ul.menu li a.active, #main-navigation ul.menu li a:hover { background:#003777; color:#ffffff; }
+
+/**
+* Superfish menu support.
+*/
+#main-navigation .block-superfish ul li a { color:#b60b1e; }
+
+#main-navigation .block-superfish ul li a span.sf-description { color:#425691; }
+
+#main-navigation .block-superfish ul li a:hover, #main-navigation .block-superfish ul li a.active,
+#main-navigation .block-superfish ul li.sfHover a { background:#003777; }
+
+#main-navigation .block-superfish ul li a:hover span.sf-description, #main-navigation .block-superfish ul li a.active span.sf-description,
+#main-navigation .block-superfish ul li.sfHover a span.sf-description { color:#ffffff; }
+
+#main-navigation .block-superfish ul ul li { background:#003777; }
+
+#main-navigation .block-superfish ul ul li:hover { background:#425691; }
+
+#main-navigation .block-superfish ul ul li a { color: #ffffff !important; }
+
+@media all and (max-width: 480px) {
+#main-navigation ul.menu li a { color:#696969; }
+#main-navigation ul.menu li a.active, #main-navigation ul.menu li a:hover { background:none; color:#e44667; }
+}
+
+/**
+* Forms.
+*/
+label { color:#b60b1e; }
+
+/**
+* Input [submit]-[reset]-[button].
+*/
+input[type="submit"], input[type="reset"], input[type="button"] { background: #b60b1e; }
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover { background: #e44667; }
+
+/**
+* About.
+*/
+.team-member-email a { background: url("images/bluered/team-email.png") no-repeat scroll left center transparent; }
+
+/**
+* Scroll to top.
+*/
+#toTop { background:transparent url("images/bluered/backtotop-arrow.png") no-repeat; opacity:0.7; filter:alpha(opacity=70); }
+
+#toTop:hover { opacity:1; filter:alpha(opacity=100); }
+
+/**
+* Tables.
+*/
+table, td { border: 1px solid #425691; }
+
+table th { background:#425691; border: 1px solid #425691; color:#ffffff; }

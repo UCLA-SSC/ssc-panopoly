@@ -1,0 +1,104 @@
+body { border-color:#f06eaa; }
+
+a, a.active, li a.active,
+.team-member-title, .team-member-description-title,
+#site-name a,
+.breadcrumb a, .submitted a, .field-type-taxonomy-term-reference .field-items .field-item a, ul.links li a, .more-link a,
+.view-tags-cloud .views-field-nid, .team-member-email a, .view-galleries .gallery-links a  { color:#ed008c; }
+
+.poll .bar .foreground { background-color:#ed008c; }
+
+a:hover,
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.view-tags-cloud a,
+#site-name a:hover,
+.breadcrumb a:hover, .submitted a:hover, .field-type-taxonomy-term-reference .field-items .field-item a:hover, ul.links li a:hover, .more-link a:hover,
+.view-tags-cloud .views-field-nid:hover, .team-member-email a:hover, .view-galleries .gallery-links a:hover { color:#f06eaa; }
+
+/**
+* Logo - Site name/slogan.
+*/
+#site-slogan { color:#262626; }
+
+/*
+* Twitter updates.
+*/
+#footer .twtr-widget .twtr-tweet a { color:#ed008c!important; }
+
+.twtr-widget { border-color: #ed91cb!important; }
+
+.block-mtt-twitter h2 { background: url('images/pinkgray/twitter-title-bg.png') no-repeat right; }
+
+/**
+* Social media.
+*/
+ul.social-bookmarks li a { opacity:0.7; filter:alpha(opacity=70); /* For IE8 and earlier */ }
+
+ul.social-bookmarks li a:hover { opacity:1; filter:alpha(opacity=100); /* For IE8 and earlier */ }
+
+ul.social-bookmarks li.facebook a { background:url('images/pinkgray/social-media-facebook.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.linkedin a { background:url('images/pinkgray/social-media-linkedin.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.twitter a { background:url('images/pinkgray/social-media-twitter.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.flickr a { background:url('images/pinkgray/social-media-flickr.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.youtube a { background:url('images/pinkgray/social-media-youtube.png') no-repeat center bottom; }
+
+/**
+* Main menu.
+*/
+#main-navigation ul.menu li a.active, #main-navigation ul.menu li a:hover { background:#f06eaa; color:#ffffff; }
+
+@media all and (max-width: 480px) {
+#main-navigation ul.menu li a { color:#696969; }
+#main-navigation ul.menu li a.active, #main-navigation ul.menu li a:hover { background:none; color:#ed008c; }
+}
+
+/**
+* Superfish menu support.
+*/
+#main-navigation .block-superfish ul li a:hover, #main-navigation .block-superfish ul li a.active,
+#main-navigation .block-superfish ul li.sfHover a { background:#f06eaa; }
+
+#main-navigation .block-superfish ul li a:hover span.sf-description, #main-navigation .block-superfish ul li a.active span.sf-description,
+#main-navigation .block-superfish ul li.sfHover a span.sf-description { color:#ffdeec; }
+
+#main-navigation .block-superfish ul ul li { background:#f06eaa; }
+
+#main-navigation .block-superfish ul ul li:hover { background:#ed008c; }
+
+#main-navigation .block-superfish ul ul li a { color: #ffdeec !important; }
+
+/**
+* Forms.
+*/
+label { color:#ed008c; }
+
+/**
+* Input [submit]-[reset]-[button].
+*/
+input[type="submit"], input[type="reset"], input[type="button"] { background: #f06eaa; }
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover { background: #ed008c; }
+
+/**
+* About.
+*/
+.team-member-email a { background: url("images/pinkgray/team-email.png") no-repeat scroll left center transparent; }
+
+/**
+* Scroll to top.
+*/
+#toTop { background:transparent url("images/pinkgray/backtotop-arrow.png") no-repeat; opacity:0.7; filter:alpha(opacity=70); }
+
+#toTop:hover { opacity:1; filter:alpha(opacity=100); }
+
+/**
+* Tables.
+*/
+table, td { border: 1px solid #F06EAA; }
+
+table th { background:#F06EAA; border: 1px solid #F06EAA; color:#ffffff; }

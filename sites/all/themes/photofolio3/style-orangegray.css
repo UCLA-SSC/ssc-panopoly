@@ -1,0 +1,104 @@
+body { border-color:#555555; }
+
+a, a.active, li a.active,
+.team-member-title, .team-member-description-title, 
+#site-name a,
+.breadcrumb a, .submitted a, .field-type-taxonomy-term-reference .field-items .field-item a, ul.links li a, .more-link a, 
+.view-tags-cloud .more-link a, .view-tags-cloud .views-field-nid, .team-member-email a, .view-galleries .gallery-links a  { color:#d84a27; }
+
+.poll .bar .foreground { background-color:#d84a27; }
+
+a:hover,
+#site-name a:hover,
+.breadcrumb a:hover, .submitted a:hover, .field-type-taxonomy-term-reference .field-items .field-item a:hover, ul.links li a:hover, .more-link a:hover, 
+.view-tags-cloud .more-link a:hover, .view-tags-cloud .views-field-nid:hover, .team-member-email a:hover, .view-galleries .gallery-links a:hover { color:#ee6948; }
+
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+.view-tags-cloud a, .view-tags-cloud a:hover { color:#555555; }
+
+/**
+* Logo - Site name/slogan.
+*/
+#site-slogan { color:#555555; }
+
+/*
+* Twitter updates.
+*/
+#footer .twtr-widget .twtr-tweet a { color:#d84a27!important; }
+
+.twtr-widget { border-color: #a0a3a7!important; }
+
+.block-mtt-twitter h2 { background: url('images/orangegray/twitter-title-bg.png') no-repeat right; }
+
+/**
+* Social media.
+*/
+ul.social-bookmarks li a:hover { opacity:0.8; filter:alpha(opacity=80); /* For IE8 and earlier */ }
+
+ul.social-bookmarks li.facebook a { background:url('images/orangegray/social-media-facebook.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.linkedin a { background:url('images/orangegray/social-media-linkedin.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.twitter a { background:url('images/orangegray/social-media-twitter.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.flickr a { background:url('images/orangegray/social-media-flickr.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.youtube a { background:url('images/orangegray/social-media-youtube.png') no-repeat center bottom; }
+
+/**
+* Main menu.
+*/
+#main-navigation ul.menu li a.active, #main-navigation ul.menu li a:hover { background:#555555; color:#ffffff; }
+
+@media all and (max-width: 480px) {
+#main-navigation ul.menu li a { color:#696969; }
+#main-navigation ul.menu li a.active, #main-navigation ul.menu li a:hover { background:none; color:#d84a27; }
+}
+
+/**
+* Superfish menu support.
+*/
+#main-navigation .block-superfish ul li a:hover, #main-navigation .block-superfish ul li a.active,
+#main-navigation .block-superfish ul li.sfHover a { background:#555555; }
+
+#main-navigation .block-superfish ul li a:hover span.sf-description, #main-navigation .block-superfish ul li a.active span.sf-description,
+#main-navigation .block-superfish ul li.sfHover a span.sf-description { color:#ffffff; }
+
+#main-navigation .block-superfish ul ul li { background:#555555; }
+
+#main-navigation .block-superfish ul ul li:hover { background:#3f3f3f; }
+
+#main-navigation .block-superfish ul ul li a { color: #ffffff !important; }
+
+/**
+* Forms.
+*/
+label { color:#d84a27; }
+
+/**
+* Input [submit]-[reset]-[button].
+*/
+input[type="submit"], input[type="reset"], input[type="button"] { background: #555555; }
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover { background: #3f3f3f; }
+
+/**
+* About.
+*/
+.team-member-email a { background: url("images/orangegray/team-email.png") no-repeat scroll left center transparent; }
+
+/**
+* Scroll to top.
+*/
+#toTop { background:transparent url("images/orangegray/backtotop-arrow.png") no-repeat; }
+
+#toTop:hover { opacity:0.8; filter:alpha(opacity=80); /* For IE8 and earlier */ }
+
+/**
+* Tables.
+*/
+table, td { border: 1px solid #d84a27; }
+
+table th { background:#d84a27; border: 1px solid #d84a27; color:#ffffff; }

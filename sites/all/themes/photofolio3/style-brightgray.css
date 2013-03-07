@@ -1,0 +1,113 @@
+body { border-color:#898480; color:#252525; }
+
+a, a.active, li a.active,
+.team-member-title, .team-member-description-title,
+#site-name a,
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.view-tags-cloud a,
+.field-name-field-mt-gallery-description,
+.breadcrumb a, .submitted a, .field-type-taxonomy-term-reference .field-items .field-item a, ul.links li a, .more-link a,
+.view-tags-cloud .views-field-nid, .team-member-email a, .view-galleries .gallery-links a  { color:#898480; }
+
+.poll .bar .foreground { background-color:#898480; }
+
+a:hover,
+#site-name a:hover,
+.breadcrumb a:hover, .submitted a:hover, .field-type-taxonomy-term-reference .field-items .field-item a:hover, ul.links li a:hover, .more-link a:hover,
+.view-tags-cloud .views-field-nid:hover, .team-member-email a:hover, .view-galleries .gallery-links a:hover { color:#716c69; }
+
+/**
+* Logo - Site name/slogan.
+*/
+#site-slogan { color:#999490; }
+
+#footer-inside-wrapper { background:#e9e9e9; border-top:1px solid #5c5651; border-bottom:2px solid #999490; }
+
+#footer-inside { border-bottom:2px solid #ffffff; }
+
+.footer-area { padding:20px 10px; }
+
+#footer-bottom-inside { background:#e9e9e9; border-top:2px solid #ffffff; margin-bottom:10px; font-size:11px; }
+
+/*
+* Twitter updates.
+*/
+#footer .twtr-widget .twtr-tweet a { color:#898480!important; }
+
+.twtr-widget { border-color: #b9b7b6!important; background:#dddddd!important; color:#252525!important; }
+
+.block-mtt-twitter h2 { background: url('images/brightgray/twitter-title-bg.png') no-repeat right; }
+
+/**
+* Social media.
+*/
+ul.social-bookmarks li.facebook a { background:url('images/brightgray/social-media-facebook.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.linkedin a { background:url('images/brightgray/social-media-linkedin.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.twitter a { background:url('images/brightgray/social-media-twitter.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.flickr a { background:url('images/brightgray/social-media-flickr.png') no-repeat center bottom; }
+
+ul.social-bookmarks li.youtube a { background:url('images/brightgray/social-media-youtube.png') no-repeat center bottom; }
+
+/**
+* Main menu.
+*/
+#main-navigation ul.menu li a { color:#898480; }
+
+#main-navigation ul.menu li a.active, #main-navigation ul.menu li a:hover { background:#898480; color:#ffffff; }
+
+@media all and (max-width: 480px) {
+#main-navigation ul.menu li a { color:#252525; }
+#main-navigation ul.menu li a.active, #main-navigation ul.menu li a:hover { background:none; color:#898480; }
+}
+
+/**
+* Superfish menu support.
+*/
+#main-navigation .block-superfish ul li a { color:#898480; }
+
+#main-navigation .block-superfish ul li a span.sf-description { color:#999490; }
+
+#main-navigation .block-superfish ul li a:hover, #main-navigation .block-superfish ul li a.active,
+#main-navigation .block-superfish ul li.sfHover a { background:#898480; }
+
+#main-navigation .block-superfish ul li a:hover span.sf-description, #main-navigation .block-superfish ul li a.active span.sf-description,
+#main-navigation .block-superfish ul li.sfHover a span.sf-description { color:#ffffff; }
+
+#main-navigation .block-superfish ul ul li { background:#898480; }
+
+#main-navigation .block-superfish ul ul li:hover { background:#716c69; }
+
+#main-navigation .block-superfish ul ul li a { color: #ffffff !important; }
+
+/**
+* Forms.
+*/
+label { color:#898480; }
+
+/**
+* Input [submit]-[reset]-[button].
+*/
+input[type="submit"], input[type="reset"], input[type="button"] { background: #898480; }
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover { background: #716c69; }
+
+/**
+* About.
+*/
+.team-member-email a { background: url("images/brightgray/team-email.png") no-repeat scroll left center transparent; }
+
+/**
+* Scroll to top.
+*/
+#toTop { background:transparent url("images/brightgray/backtotop-arrow.png") no-repeat; }
+
+/**
+* Tables.
+*/
+table, td { border: 1px solid #898480; }
+
+table th { background:#898480; border: 1px solid #898480; color:#ffffff; }

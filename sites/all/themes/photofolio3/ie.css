@@ -1,0 +1,17 @@
+#footer .view-image-galleries .views-row { width:75px; padding:0; margin:0 12px 12px 0; }
+
+.node-teaser .field-type-image img { height:145px; }
+
+.node-mt-gallery .field-type-image img, .view-galleries.one-column .views-field-field-mt-gallery-image img { height:187px; }
+
+.gallery-node .gallery-item { margin: 0 5px 10px 5px; }
+
+.view-galleries.two-columns .views-row { margin: 0 5px 5px 5px; }
+
+.view-galleries.two-columns .views-row img { height:150px; }
+
+.view-galleries.three-columns .views-row { margin: 0 5px 5px 5px; }
+
+.view-galleries.three-columns .views-row img { height:98px; }
+
+.yoxview-image-item { margin:0; } .yoxview-image-item img { width:98px; }
