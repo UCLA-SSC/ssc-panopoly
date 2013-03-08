@@ -1,0 +1,87 @@
+//
+// Structure
+// Styles for Tabs, Messages, ..etc
+// --------------------------------------------------
+
+#ucla-footer {
+	max-width: 100%;
+	
+	margin: 0 auto;
+	margin-top: 10px;
+	color: white;
+	background: #172435;
+	font-family: 'proxima-nova', sans-serif;
+}
+
+#ucla-footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#footer-1-wrapper {
+	max-width:1200px;
+	margin: 0 auto;
+	padding-left: 25px;
+	padding-right: 25px;
+		padding-top: 10px;
+}
+	
+#footer-1 {
+	height:100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	color: #fff;
+	background: transparent;
+	font-size: 1em !important;
+	.span3 {
+		margin-left: 0px;
+	}
+}
+	
+	#ucla-footer h2 { font-size: 1em; font-weight: 300; }
+
+	
+	#footer-1 ul {
+		overflow: hidden;
+	}
+	
+	#footer-1 li {
+		font-weight: 300;
+		padding-bottom: 5px;
+		display: block !important;
+	}
+	
+	#ucla-footer h2 {
+		line-height: 16px;
+	}
+	
+	#ucla-footer strong {
+		text-transform: uppercase !important;
+		font-family: 'proxima-nova';
+		font-weight: 400;
+	}
+
+#footer-2-wrapper {
+	background: #09111e;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#footer-2 {
+	max-width: 960px;
+	height:auto;
+	text-align: justify;
+	-ms-text-justify:distribute-all-lines;
+	text-justify: distribute-all-lines;
+	margin: 0 auto;
+	color: #999;
+}
+#footer-2 ul { text-align: center; }
+#footer-2 li {width:auto; zoom:1; font-weight: 400; list-style: none; color: #d28e42; display: inline-block; text-transform: uppercase; font-size:0.9em; padding-left:25px;
+padding-right:25px;}
+
+#footer-2 a {
+	color: #d28e42;
+}
