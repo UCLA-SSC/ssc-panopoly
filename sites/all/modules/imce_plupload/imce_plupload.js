@@ -17,3 +17,22 @@ imce.uploadValidate = function (data, form, options) {
   
   return true;
 };
+
+(function ($) {
+  $('.plupload_start').css('display', 'none');
+  //settings for upload
+  imce.uploadSettings = function () {
+    return {
+      beforeSubmit: imce.uploadValidate, 
+      success: function (response) {imce.processResponse($.parseJSON(response));}, 
+      complete: function () {
+        imce.fopLoading('upload', false);
+        var uploader = $('.plupload-element').pluploadQueue();
+        uploader.refresh();
+        uploader.init();
+      }, 
+      resetForm: true
+    };
+  };
+  
+})(jQuery);
