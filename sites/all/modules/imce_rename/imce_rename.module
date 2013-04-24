@@ -98,7 +98,7 @@ function imce_rename_file(&$imce, $old_uri, $new_uri) {
   $result = db_query("SELECT f.* FROM {file_managed} f WHERE f.uri = :uri", array(':uri' => $old_uri));
   $file = $result->fetchObject();
 
-  $move = file_move($file, $new_uri, FILE_EXISTS_ERROR);
+  $move = file_move($file, $new_uri, FILE_EXISTS_RENAME);
 
   $file->uri = $new_uri;
   $file->filename = basename($file->uri);
