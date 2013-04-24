@@ -89,8 +89,8 @@ function theme_views_view_galleria($vars) {
     if (!isset($row->_field_data[$view->base_field]['entity']->{$img_field_name})) {
       continue;
     }
-    $item = $row->_field_data[$view->base_field]['entity']->{$img_field_name}[$lang][0];
-    $items[] = $item;
+    $row_items = $row->_field_data[$view->base_field]['entity']->{$img_field_name}[$lang];
+    $items = array_merge($items, $row_items);
   }
 
   return theme('galleria_container', array(
