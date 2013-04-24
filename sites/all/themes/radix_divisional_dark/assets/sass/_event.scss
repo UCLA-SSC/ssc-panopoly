@@ -1,0 +1,27 @@
+@media (max-width: 480px) {
+	div.events-item-left {
+		width: 90% !important;
+	}
+	div.events-item-right {
+		clear: both;
+		float: left !important;
+		width: 90% !important;
+		margin: 0 auto !important;
+		text-align: center;
+	}
+	
+	div.event-single-content {
+		width: 100%;
+		margin-left: 0;
+		
+		.col3 {
+			margin-left: 25px;
+		}
+	}
+}
+
+@media (max-width: 979px) {
+	div.view.view-events.view-id-events.view-display-id-block_3 {
+		max-width: 99%;
+	}
+}

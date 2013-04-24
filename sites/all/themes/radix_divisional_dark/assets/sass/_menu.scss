@@ -1,9 +1,10 @@
+$dark-navy: #2c639b;
 
 #header {
 	margin: 0 !important;
 	padding: 0 !important;
 		background: url('http://dev.commstds.ucla.edu/sites/all/themes/radix_divisional_dark/images/topnav_bg_dark.png');
-
+	height: 100px;
 }
 
 #logo { display: none;}
@@ -14,6 +15,12 @@
 	margin-right: auto;
 	height: 114px;
 	background: url('http://dev.commstds.ucla.edu/sites/all/themes/radix_divisional_dark/images/topnav_bg_rays.png');
+}
+
+@media (max-width: 480px) {
+	#top-container {
+		height: 78px !important;
+	}
 }
 
 #top-logo {
@@ -28,8 +35,8 @@
 	clear: right;
 	float: right;
 	position: relative;
-	top: 25px;
-	margin-right: 25px;
+	top: 15px;
+	margin-right: 0;
 }
 
 @media (max-width: 768px) {
@@ -40,12 +47,12 @@
 
 
 #navigation {
-	background: #172435;
-	font-weight: 300;
+	background: #16314a;
 	font-family: 'proxima-nova';
 	.navbar-inner {
 		max-width: 1200px;
 		margin: 0 auto;
+		min-height: 0px;
 		border: 0 !important;
 		border-bottom-left-radius: 0 !important;
 		border-bottom-right-radius: 0 !important;
@@ -74,8 +81,14 @@
 	}
 }
 
+@media (max-width: 1200px) {
+	#social-buttons {
+		margin-right: 20px;
+	}
+}
+
 #main-menu > ul.menu {
-	max-width: 648px;
+	max-width: 700px;
 	margin: 0 auto;
 	li { 
 		line-height: 15px;}
@@ -85,15 +98,90 @@
 
 #main-menu > ul.menu > li > a {
 	text-transform: uppercase !important;
-	color: #fff;
-	font-size: 16px;
-	font-weight: 300;
-	text-shadow: none !important;
+	font-size: 18px;
+	font-weight: 400 !important;
+	letter-spacing: 0;
+	color: #f5f5f5;
+	font-family: 'proxima-nova-alt';
+	text-shadow: rgb(0, 0, 0) 0px 2px 0px;
 }
 
+
+
 #main-menu > ul.menu > li > a:hover {
-	background: rgb(229,229,229);
+	background: $dark-navy;
+	color: white;
+	text-shadow: rgb(0, 0, 0) 0px 1px 0px;
+	
 }
+
+#main-menu > ul.menu > li > a:active {
+	text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+}
+
+    #main-menu > ul.menu > li > a:focus, #main-menu > ul.menu > li > a.active {
+      color: white;
+      text-decoration: none;
+      background-color: $dark-navy;
+}
+
+#main-menu > ul.menu > li.open > a {
+  color: white;
+  background-color: $dark-navy; }
+
+/* drop down */
+#main-menu > ul.menu > li > ul.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 0;
+  list-style: none;
+text-transform: uppercase;
+font-size: 1em;
+letter-spacing: 0.02em;
+font-weight: 400;
+  background-color: $dark-navy;
+  border: 1px solid #CCC;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+	border-top: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+	  #main-menu > ul.menu > li > ul.menu li a {
+        display: block;
+        padding: 3px 0px;
+        clear: both;
+        font-weight: 300;
+        line-height: 20px;
+        color: white;
+		margin-left: 10px;
+		margin-right: 10px;
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+        white-space: nowrap; }
+
+		  #main-menu > ul.menu > li > ul.menu li a:focus, #main-menu > ul.menu > li > ul.menu li:hover {
+            color: white;
+            text-decoration: none;
+            outline: 0;
+            background-color: #0088cc;
+            background-color: #0081c2;
+            background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+            background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+            background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+            background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+            background-repeat: repeat-x;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0077B3', GradientType=0); }
+
 @media (min-width: 980px) { 
 	#main-menu > ul.menu > li {
 		border-right-width:1px;
@@ -111,3 +199,103 @@
 		border-right-width: 0px;
 	}
 }
+
+@media (max-width: 979px) {
+	#main-menu > ul.menu > li.last.leaf {
+		padding-bottom: 10px;
+	}
+}
+
+/* MINI PANELS */
+
+#mini-panel-people_megamenu, #mini-panel-academics_megamenu {
+//	background: transparent !important;
+	-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  	-moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	border: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	color: white;
+	max-height: 175px !important;
+	font-weight: 300;
+	img {
+		border: 1px solid #f5f5f5;
+		height: 160px;
+	}
+	
+	a {
+		color: white;
+	}
+	
+	.mccoppin-column1 {
+		width: 200px;
+	}
+	
+	.mccoppin-column2 {
+		width: 425px;
+	}
+	
+	
+	
+}
+
+#mini-panel-academics_megamenu {
+	.mccoppin-column2 {
+		width: 200px;}
+}
+
+#people-1, #academics-1, #academics-2 {
+	p {
+		border-bottom: 1px solid rgba(255,255,255,0.3);
+		a {
+			font-size: 1.1em;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+	h4 {
+		padding: 0px;
+		margin: 0px;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 1.1em;
+		margin-bottom: 5px;
+		border-bottom: 1px solid rgba(255,255,255,0.3);
+	}
+}
+
+#academics-2 {
+	p {
+		margin-left: 15px;
+	}
+}
+
+.qtip.qtip-light {
+	height: 240px;
+}
+
+.qtip-contentWrapper {
+	border: 0 !important;
+	padding: 10px !important;
+	-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  	-moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	background: url('http://new.commstudies.ucla.edu/sites/all/themes/radix_divisional_dark/images/megamenu_bg.jpg') !important;
+}
+
+.qtip-content.qtip-content {
+	background: none !important;
+	padding: 0 !important;
+}
+
+a.btn.btn-navbar, a.btn.btn-navbar.btn-navbar-menu {
+	color: #000;
+	margin-bottom: 5px;
+}
+
+a.btn.btn-navbar:hover {
+	color: #000;
+}
+
+

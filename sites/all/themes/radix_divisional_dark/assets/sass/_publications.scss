@@ -1,0 +1,43 @@
+div.view.view-publications.view-id-publications.view-display-id-page {
+	max-width: 80%;
+	margin: 0 auto;
+	-webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  	-moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #d5d4d2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d5d4d2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#d5d4d2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#d5d4d2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#d5d4d2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#d5d4d2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d5d4d2',GradientType=0 ); /* IE6-9 */
+	div.view-content.row-fluid {
+		width: 95%;
+		padding-left: 20px;
+		margin: 0 auto;
+	}
+	
+	.views-row {
+		width: 180px;
+		height: 270px;
+		padding: 10px;
+		float: left;
+		margin: 0 auto;
+		.views-field-title {
+			font-weight: 600;
+			font-size: 1.1em;
+			a { color: black; font-weight: 600; line-height: 0.8em; font-size: 1.1em;}
+			a > span {
+				line-height: 0.8em;
+			}
+		}
+		
+		.views-field-field-publication-author {
+			font-size: 0.8em;
+			font-style: italic;
+			line-height: 1em;
+			margin-bottom: 5px;
+		}
+	}
+}

@@ -3,13 +3,31 @@
 // Styles for Tabs, Messages, ..etc
 // --------------------------------------------------
 
+/*
+div.region.region-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+*/
+
+#footer-contact {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	border-right: 3px solid #ec9e4b;
+	padding-left: 10px; 
+	padding-right: 10px; 
+	text-align: right;
+	float: right;
+}
+
 #ucla-footer {
 	max-width: 100%;
 	
 	margin: 0 auto;
 	margin-top: 10px;
 	color: white;
-	background: #172435;
+	background: #09111e;
 	font-family: 'proxima-nova', sans-serif;
 }
 
@@ -18,18 +36,21 @@
 	text-decoration: none;
 }
 
+#ucla-footer a:hover {
+	color: #ec9e4b;
+}
+
 #footer-1-wrapper {
 	max-width:1200px;
 	margin: 0 auto;
-	padding-left: 25px;
+	padding-left: 18px;
 	padding-right: 25px;
 		padding-top: 10px;
 }
 	
 #footer-1 {
-	height:100%;
-	max-width: 1200px;
-	margin: 0 auto;
+	min-height: 85px;
+	max-width: auto;
 	color: #fff;
 	background: transparent;
 	font-size: 1em !important;
@@ -56,32 +77,32 @@
 	}
 	
 	#ucla-footer strong {
-		text-transform: uppercase !important;
-		font-family: 'proxima-nova';
-		font-weight: 400;
+	 font-size: 0.9em; margin: 0; margin-top: -20px; padding: 0; line-height: 1.125em; font-weight: 600; letter-spacing:.1em; text-rendering: auto !important; text-transform: uppercase;
+	}
+	
+	#ucla-footer strong:hover {
+		color: #ec9e4b;
 	}
 
 #footer-2-wrapper {
 	background: #09111e;
-	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
+@media (max-width: 1240px) {
+	#footer-2-wrapper {
+		margin-left: 17px;
+	}
+}
+
 #footer-2 {
-	max-width: 960px;
+	max-width: 1200px;
 	height:auto;
-	text-align: justify;
-	-ms-text-justify:distribute-all-lines;
-	text-justify: distribute-all-lines;
+	text-align: left;
 	margin: 0 auto;
 	color: #999;
 }
-#footer-2 ul { text-align: center; }
-#footer-2 li {width:auto; zoom:1; font-weight: 400; list-style: none; color: #d28e42; display: inline-block; text-transform: uppercase; font-size:0.9em; padding-left:25px;
-padding-right:25px;}
-
-#footer-2 a {
-	color: #d28e42;
-}
+#footer-2 ul { text-align: left; margin-left: 0; }
+#footer-2 li {width:auto; zoom:1; font-weight: 400; list-style: none; color: #d28e42; display: inline-block; text-transform: uppercase; font-size:0.9em; padding-right: 10px; a { color: #ec9e4b; font-weight: 600; }}

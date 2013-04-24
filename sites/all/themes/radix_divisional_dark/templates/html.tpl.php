@@ -60,24 +60,23 @@
    </script>
   <![endif]-->
 
-<script language="javascript"> 
-function toggle() {
-	var ele = document.getElementById("toggleText");
-	var text = document.getElementById("displayText");
-	if(ele.style.display == "block") {
-    		ele.style.display = "none";
-		text.innerHTML = "show";
-  	}
-	else {
-		ele.style.display = "block";
-		text.innerHTML = "hide";
-	}
-} 
-</script>
 
 <script type="text/javascript" src="//use.typekit.net/vqy3jhz.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
+<script language="javascript"> 
+function toggle2() {
+	var ele = document.getElementById("footer-1");
+	var text = document.getElementById("displayText2");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "<h2><strong>Social Sciences Division Departments&nbsp;&nbsp;<i class='icon-plus icon-white'></i></strong></h2>";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "<h2><strong>Social Sciences Division Departments&nbsp;&nbsp;<i class='icon-minus icon-white'></i></strong></h2>";
+	}
+} 
+</script>
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
 </head>

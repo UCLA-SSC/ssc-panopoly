@@ -7,3 +7,257 @@
 	margin: 0 auto;
 }
 
+/*front page */
+
+
+
+#front-page-left-column {
+	-webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  	-moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+	padding: 10px;
+	margin-top: 20px;
+	background: white;
+	
+	.panel-separator {
+		border-top: 1px solid #666;
+		margin: 20px 20px 20px 20px;
+	}
+	
+	h4 {
+		font-size: 2em !important;
+			color: #95877e;
+	}
+}
+
+/* events widget front page */
+div.view.view-events.view-id-events.view-display-id-block_2 {
+	a {
+		font-weight: 700;
+		color: #115795;
+	}
+	.view-header {
+		border-bottom: 0;
+		text-align: left;
+		padding: 0;
+		padding-top: 10px;
+		padding-bottom: 5px;
+	}
+	a.events-widget-title {
+		border-bottom: 0;
+		font-size: 2em !important;
+		color: #95877e;
+	}
+	
+	div.homepage-title {
+		line-height: 0.9em;
+		margin-bottom:4px;
+	}
+	
+	div.homepage-date {
+		margin-top: -5px;
+	}
+	
+	.views-row {
+		margin-bottom: 10px;
+	}
+}
+
+/* news widget */
+div.view.view-news.view-id-news.view-display-id-block_3 {
+	a {
+		font-weight: 700;
+		color: #115795;
+		font-size: 1.1em;
+		line-height: 0.9em;
+	}
+	
+	.view-header {
+		border-bottom: 0;
+		text-align: left;
+		padding: 0;
+		padding-bottom: 5px;
+	}
+	
+	a.event-widget-title {
+		border-bottom: 0;
+		font-size: 2em !important;
+		color: #95877e;
+		text-align: left;
+		border-bottom: 0;
+	}
+	
+	div.homepage-title {
+		margin-bottom: 5px;
+		line-height: 0.5em;
+	}
+	
+	
+	div.homepage-date {
+		margin-top: -5px;
+		font-size: 0.9em;
+		font-style: italic;
+	}
+	
+	div.homepage-body {
+		font-size: 1em;
+		margin-top: 1px;
+		font-weight: 400;
+		margin-bottom: 20px;
+		a { text-decoration: none; }
+		p {
+			line-height: 1em;
+			color: #333;
+			font-weight: 600;
+			text-decoration: none;
+		}
+	}
+
+	
+	div.views-field.views-field-created {
+		span.field-content {
+			font-weight: 600;
+		}
+	}
+}
+
+#mini-panel-news_and_events {
+	a {
+		span {
+			line-height: 0.5em;
+		}
+	}
+}
+
+/* books widget */
+
+div.panel-pane.pane-views.pane-book {
+	-webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  	-moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+	padding: 10px;
+	background: #fff;
+	.views-field-title {
+		a { font-weight: 600; font-size: 1.1em; }
+	}
+	h4 {
+		font-size: 1.9em;
+			color: #95877e;
+	}
+	img {
+		max-width: 80px;
+		border: 1px solid #cb9859;
+	}
+	
+	div.views-row {
+		margin-bottom: 10px;
+	}
+}
+
+/* student resources */
+
+#student-resources {
+	margin-top: 30px;
+	background: #fff;
+	-webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  	-moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+border: 2px solid white;
+	h4 {
+		color: white !important;
+		background: #98bdda;
+		font-size: 1.4em !important;
+		font-weight: 300;
+		letter-spacing: 0.01em;
+		text-align: center;
+		padding: 2px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	ul {
+		margin-left: 0px;
+		margin-bottom: 0px;
+	}
+	li {
+		font-size: 1.2em;
+		font-weight: 300;
+				padding-left: 10px;
+				padding-top: 3px;
+				padding-bottom: 3px;
+		.gray {
+			background: #e3e3e5;
+		}
+	}
+}
+
+/* message from the chair */
+
+#message-chair {
+	background: #ede9e6;
+	border: 3px solid white;
+	padding: 10px 20px;
+	margin-top: 25px;
+	img {
+		max-width: 200px;
+		border: 2px solid #96887f;
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+	p {
+		font-size: 0.9em;
+		line-height: 1.3em;
+	}
+		a {
+			color: #96887f;
+			font-weight: 700;
+			letter-spacing: 0.02em;
+		}
+
+	ul.links.inline > li.node-readmore.first.last > a > span {
+		float: right;
+	}
+		h2 > a {
+			font-size: 1em; 
+		}
+	
+	
+}
+
+/* apply now button */
+
+#apply-now-button {
+	margin: 0 auto;
+		width: 160px;
+	a.btn.btn-primary {
+		margin: 0 auto;
+
+			font-size: 1.3em;
+			color: #f5f5f5;
+			padding: 10px 25px;
+	}
+}
+
+/* front slider */
+
+.pane-bundle-spotlight {
+	font-family: 'proxima-nova', sans-serif !important;
+}
+
+div.field.field-name-field-basic-spotlight-items.field-type-panopoly-spotlight {
+	font-family: 'proxima-nova', sans-serif !important;
+	font-size: 1.2em;
+}
+
+h3.panopoly-spotlight-label {
+	display: none;
+}
+
+div.panopoly-spotlight-info {
+	h2 {
+		font-weight: 600;
+		font-size: 2em;
+	}
+	p {
+		font-size: 1.5em;
+	}
+}

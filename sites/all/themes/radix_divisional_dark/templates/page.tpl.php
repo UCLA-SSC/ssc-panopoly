@@ -13,18 +13,19 @@
 <header id="header" class="header" role="header">
 <div id="top-container">
 		<div id="top-logo">
-		<a href="http://dev.commstds.ucla.edu"><img src="http://dev.commstds.ucla.edu/sites/all/themes/radix_divisional_dark/images/logo_commstudies_dark.png"></a>
+<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /> </a>
 		</div>
 		
-	<div class="hidden-mobile hidden-tablet" id="social-buttons">
-		<img src="http://dev.commstds.ucla.edu/sites/all/themes/radix_divisional_dark/images/twitter_white.png">
-		<img src="http://dev.commstds.ucla.edu/sites/all/themes/radix_divisional_dark/images/facebook_white.png">
-		<img src="http://dev.commstds.ucla.edu/sites/all/themes/radix_divisional_dark/images/google_white.png">
-	</div>
+		<div class="hidden-mobile hidden-tablet" id="social-buttons">
+			<img src="<?php print $front_page; ?>sites/all/themes/radix_divisional_dark/images/twitter_white.png">
+			<img src="<?php print $front_page; ?>sites/all/themes/radix_divisional_dark/images/facebook_white.png">
+			<img src="<?php print $front_page; ?>sites/all/themes/radix_divisional_dark/images/google_white.png">
+		</div>
 
 		
 </header>
   <div class="container">
+
     <div id="navigation" class="navbar">
       <div class="navbar-inner">
         <div class="container clearfix">
