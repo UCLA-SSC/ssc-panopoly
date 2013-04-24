@@ -520,11 +520,42 @@ send: function (fid) {
 },
 
 //add an operation for an external application to which the files are send.
-setSendTo: function (title, func) {
-  imce.send = function (fid) { fid && func(imce.fileGet(fid), window);};
+setSendTo: function (title, func, min, max) {
+  // We always require a minimum of atleast 1.
+  if (min === undefined || min == null) {
+    min = 1;
+  }
+  // If no maximum is given we default to 1 which is expected behaviour from previous implementations.
+  // A null value is considered to be no maximum
+  if (max === undefined) {
+    max = 1;
+  }
+
+  if (max == 1) {
+    imce.send = function (fid) { fid && func(imce.fileGet(fid), window);};
+  }
+  else {
+    imce.send = function (fids) {
+      var fToSend = [];
+      //some operations don't send us a list of selected files but just a single file
+      //the list is an object so check if it is
+      if (typeof fids == "object") {
+        $.each(fids, function (index, value) {
+          fToSend.push(imce.fileGet(index));
+        });
+      }
+      //if it's not an object it's just a single filename
+      else {
+        fToSend.push(imce.fileGet(fids));
+      }
+      func(fToSend, window);
+    }
+  }
+
   var opFunc = function () {
-    if (imce.selcount != 1) return imce.setMessage(Drupal.t('Please select a file.'), 'error');
-    imce.send(imce.vars.prvfid);
+    if (imce.validateSelCount(min,max)) {
+      imce.send(imce.selected);
+    }
   };
   imce.vars.prvtitle = title;
   return imce.opAdd({name: 'sendto', title: title, func: opFunc});

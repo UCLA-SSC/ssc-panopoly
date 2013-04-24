@@ -38,8 +38,17 @@ imce.hooks.load.push(function(win) {
   }
   // Set custom sendto function. appFinish is the default.
   var sendtoFunc = appFields.url ? appFinish : false;
+
+  // Set min and max to undefined, passing these to setSendTo will result in default behaviour.
+  var min = undefined;
+  var max = undefined;
+
   //check sendto@funcName syntax in URL
-  if (appFields.sendto && (func = isFunc(appFields.sendto))) {
+  if (appFields.sendto && (
+      (appFields.sendto.indexOf('@') != -1 && (func = isFunc(appFields.sendto.split('@')[0])) && (min = appFields.sendto.split('@')[1]) && (max = appFields.sendto.split('@')[2])) || (
+        func = isFunc(appFields.sendto)
+      )
+    )) {
     sendtoFunc = func;
     delete appFields.sendto;
   }
@@ -63,7 +72,7 @@ imce.hooks.load.push(function(win) {
     imce.highlight(filename.substr(filename.lastIndexOf('/')+1));
   }
   // Set send to
-  sendtoFunc && imce.setSendTo(Drupal.t('Insert file'), sendtoFunc);
+  sendtoFunc && imce.setSendTo(Drupal.t('Insert file'), sendtoFunc, min, max);
 });
 
 // Default sendTo function
