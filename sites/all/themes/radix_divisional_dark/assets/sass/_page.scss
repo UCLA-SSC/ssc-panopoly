@@ -2,6 +2,70 @@
 // Styles for individual pages
 // --------------------------------------------------
 
+
+/* styles for generic pages */
+
+div.view.view-general-page.view-id-general_page.view-display-id-default {
+	-webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  	-moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #d5d4d2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d5d4d2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#d5d4d2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#d5d4d2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#d5d4d2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#d5d4d2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d5d4d2',GradientType=0 ); /* IE6-9 */
+	
+	font-size: 1.1em;
+	line-height: 1.5em;
+	.view-content {
+		max-width: 95%;
+		padding: 20px;
+	}
+}
+
+#content-page {
+
+	div.panel-pane.pane-views {
+		padding: 0;
+		background-color: #fff;
+		margin: 0 0 30px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+		-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+		-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	
+	
+	}
+	div.bryant-sidebar {
+		.pane-title {
+			text-transform: uppercase;
+			font-size: 1.5em !important;
+			color: #999;
+			font-weight: 400;
+		}
+		div.panel-pane.pane-views{
+		.pane-content {
+			padding: 10px;
+		}
+	}
+	}
+	
+	
+	.events-widget-title, .event-widget-title {
+		font-size: 1.5em !important;
+		text-transform: uppercase;
+		color: 999;
+		font-weight: 400;
+	}
+}
+
+
+
 #content {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -129,30 +193,7 @@ div.view.view-news.view-id-news.view-display-id-block_3 {
 	}
 }
 
-/* books widget */
 
-div.panel-pane.pane-views.pane-book {
-	-webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
-  	-moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
-  	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
-	padding: 10px;
-	background: #fff;
-	.views-field-title {
-		a { font-weight: 600; font-size: 1.1em; }
-	}
-	h4 {
-		font-size: 1.9em;
-			color: #95877e;
-	}
-	img {
-		max-width: 80px;
-		border: 1px solid #cb9859;
-	}
-	
-	div.views-row {
-		margin-bottom: 10px;
-	}
-}
 
 /* student resources */
 

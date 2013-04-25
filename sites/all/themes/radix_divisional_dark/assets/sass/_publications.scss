@@ -41,3 +41,43 @@ div.view.view-publications.view-id-publications.view-display-id-page {
 		}
 	}
 }
+
+/* books widget */
+
+div.panel-pane.pane-views.pane-book {
+	-webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  	-moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+	padding: 10px;
+	background: #fff;
+	.view-header {
+		border-bottom: 0;
+		text-align: left;
+		margin: 0;
+		padding: 0;
+		padding-top: 10px;
+		a {
+			border-bottom: 0;
+			font-weight: 600;
+			font-size: 2em !important;
+			color: #95877e;
+			text-align: left;
+			border-bottom: 0;
+		}
+	}
+	.views-field-title {
+		a { font-weight: 600; font-size: 1.1em; }
+	}
+	h4 {
+		font-size: 1.9em;
+			color: #95877e;
+	}
+	img {
+		max-width: 80px;
+		border: 1px solid #cb9859;
+	}
+	
+	div.views-row {
+		margin-bottom: 10px;
+	}
+}
